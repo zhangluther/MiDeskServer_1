@@ -138,4 +138,4 @@ dist
 /files/
 /temp/
 /log/
-.sqlite
+*.sqlite

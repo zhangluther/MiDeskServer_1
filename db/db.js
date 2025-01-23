@@ -3,9 +3,9 @@ const dbConfig=require('../config/database')
 
 // console.log(dbConfig.dbPath);
 
-class Database{ 
+class LogDatabase{ 
     constructor(){
-        this.db=new sqlite3.Database(dbConfig.dbPath,(err)=>{
+        this.db=new sqlite3.Database(dbConfig.logDbPath,(err)=>{
             if(err){
                 console.error('数据库连接失败: ',err);
             }else{
@@ -89,4 +89,4 @@ class Database{
 
 }
 
-module.exports=Database;
+module.exports=LogDatabase;

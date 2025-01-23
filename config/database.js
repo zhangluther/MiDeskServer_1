@@ -1,5 +1,5 @@
 const config={
-    dbPath:'./db/database.sqlite'
+    logDbPath:'./db/log_database.sqlite'
 }
 
 module.exports=config;
